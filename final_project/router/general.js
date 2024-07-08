@@ -114,6 +114,7 @@ public_users.get('/get_async', async function (req, res) {
   });
 
   let filteredBooks = await filterBooks;
+  
   if (filteredBooks.length > 0) {
     res.send(JSON.stringify(filteredBooks, null, 4));
   } else {
@@ -134,6 +135,7 @@ public_users.get('/isbn_async/:isbn', async function (req, res) {
   });
 
   let filteredBooks = await filterBooks;
+
   if (filteredBooks.length > 0) {
     res.send(JSON.stringify(filteredBooks, null, 4));
   } else {
@@ -154,6 +156,7 @@ public_users.get('/author_async/:author', async function (req, res) {
   });
 
   let filteredBooks = await filterBooks;
+
   if (filteredBooks.length > 0) {
     res.send(JSON.stringify(filteredBooks, null, 4));
   } else {
@@ -174,6 +177,7 @@ public_users.get('/title_async/:title', async function (req, res) {
   });
 
   let filteredBooks = await filterBooks;
+
   if (filteredBooks.length > 0) {
     res.send(JSON.stringify(filteredBooks, null, 4));
   } else {
